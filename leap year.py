@@ -1,12 +1,11 @@
 try:
     year = int(input("Enter a year to find out it's leap or not"))
-    if (year % 100 == 0):
-        a = year // 100
-        if (a % 4 == 0):
+    if year % 100 == 0:
+        if year % 400== 0:
             print("It's a leap year")
         else:
             print("It's not a leap year")
-    elif (year % 4 == 0):
+    elif year % 4 == 0:
         print("It's a leap year")
     else:
         print("It's not a leap year")
