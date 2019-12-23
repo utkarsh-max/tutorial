@@ -1,3 +1,3 @@
 from math import *
 num=float(input("Enter a number"))
-print(abs(num))
+print(fabs(num))
