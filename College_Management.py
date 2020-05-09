@@ -30,11 +30,9 @@ def back1():
     student1()
 
 def registeredstdata():
-    password=passentryv.get()
-    dbconfig()
-    que='insert into student_detail(Name,Father_Name,Mother_Name,) '
+    pass
 
-
+admissiontypeentryv=StringVar()
 nameentryv=StringVar()
 fnameentryv=StringVar()
 mnameentryv=StringVar()
@@ -52,7 +50,7 @@ def studentregistration():
     lab.grid(row=4,column=4)
     lab8=Label(root,text="Admission Type",font=("Ariel",20))
     lab8.grid(row=5,column=3)
-    admissiontypeentry=Combobox(root,values=["Entrance","Direct"])
+    admissiontypeentry=Combobox(root,values=["Entrance","Direct"],textvar=admissiontypeentryv)
     admissiontypeentry.grid(row=5,column=5)
     lab1=Label(root,text="Full Name",font=("Ariel",20))
     lab1.grid(row=6,column=3)
@@ -91,6 +89,9 @@ def back():
     removeallwidget()
     homepage()
 
+def studentlogin():
+    pass
+
 def student1():
     removeallwidget()
     mainheading()
@@ -106,10 +107,18 @@ def student1():
     rollentry.grid(row=4,column=5)
     passentry = Entry(root)
     passentry.grid(row=5, column=5)
-    btn = Button(root, text="LogIN", font=("Ariel", 20, "bold"), bd=10)
+    btn = Button(root, text="LogIN", font=("Ariel", 20, "bold"), bd=10,command=studentlogin)
     btn.grid(row=6, column=4)
     btn1 = Button(root, text="New Registration", font=("Ariel", 20, "bold"), bd=10,command=studentregistration)
     btn1.grid(row=7, column=4)
+
+def institute1login():
+    pass
+
+
+def institute1newentry():
+    pass
+
 
 def institute1():
     removeallwidget()
@@ -124,9 +133,9 @@ def institute1():
     rollentry.grid(row=4, column=5)
     passentry = Entry(root)
     passentry.grid(row=5, column=5)
-    btn = Button(root, text="LogIN", font=("Ariel", 20, "bold"), bd=10)
+    btn = Button(root, text="LogIN", font=("Ariel", 20, "bold"), bd=10,command=institute1login)
     btn.grid(row=6, column=4)
-    btn1 = Button(root, text="New Entry", font=("Ariel", 20, "bold"), bd=10)
+    btn1 = Button(root, text="New Entry", font=("Ariel", 20, "bold"), bd=10,command=institute1newentry)
     btn1.grid(row=7, column=4)
 
 def homepage():
