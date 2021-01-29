@@ -195,18 +195,21 @@ try:
         Screen().clear()
         t = Turtle()
         t.hideturtle()
-        t.left(90)
+        t.left(45)
         t.forward(200)
-        t.left(90)
-        t.forward(50)
-        t.back(50)
-        t.right(-90)
+        t.up()
+        t.right(45)
+        t.back(150)
+        t.down()
+        t.right(45)
         t.forward(200)
-        t.left(-270)
-        t.circle(90, extent=-90)
         sleep(1)
         test()
         done()
+
+
+
+
 
 
     def ShapeK():
@@ -434,17 +437,19 @@ try:
         Screen().clear()
         t = Turtle()
         t.hideturtle()
-        t.left(45)
+        t.left(90)
         t.forward(200)
-        t.up()
-        t.right(45)
-        t.back(150)
-        t.down()
-        t.right(45)
+        t.left(90)
+        t.forward(50)
+        t.back(50)
+        t.right(-90)
         t.forward(200)
+        t.left(-270)
+        t.circle(90, extent=-90)
         sleep(1)
         test()
         done()
+
 
 
     def ShapeY():
